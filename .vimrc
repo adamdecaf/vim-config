@@ -35,13 +35,6 @@ inoremap jj <esc>
 noremap H ^
 noremap L $
 
-" Put a red line at 80 characters
-if exists('+colorcolumn')
-  set colorcolumn=120
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
-endif
-
 " Use tab for autocompletetion
 function! SuperTab()
     if (strpart(getline('.'),col('.')-2,1)=~'^\W\?$')
