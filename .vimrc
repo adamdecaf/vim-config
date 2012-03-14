@@ -4,7 +4,7 @@
 syntax on " Turn on syntax highligthing
 set showmatch  "Show matching bracets when text indicator is over them
 
-colorscheme delek
+colorscheme koehler
 
 " Switch on filetype detection and loads 
 " indent file (indent.vim) for specific file types
@@ -17,13 +17,21 @@ filetype on
 " Some other confy settings
 """"""""""""""""""""""""""""""""""
 " set nu " Number lines
-set hls " highlight search
+noremap <C-n> :set nu! nu?<CR>
+set hls " highlight search:q:wq
 set lbr " linebreak
 
 " Use 2 space instead of tab during format
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+
+" Enable a faster scroll
+nnoremap <C-j> 5<C-e>
+nnoremap <C-k> 5<C-y>
+
+" Don't show the annoying tab bar
+set showtabline=0
 
 " Toggle Search Highlights with space
 noremap <space> :set hlsearch! hlsearch?<CR>
