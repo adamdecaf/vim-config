@@ -18,7 +18,7 @@ filetype on
 """"""""""""""""""""""""""""""""""
 " set nu " Number lines
 noremap <C-n> :set nu! nu?<CR>
-set hls " highlight search:q:wq
+set hls " highlight search
 set lbr " linebreak
 
 " Use 2 space instead of tab during format
