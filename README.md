@@ -11,7 +11,7 @@
 * :Calc <expression>      -- Perform math computations with python
 * S                       -- Toggle spelling (en-us)
 * J/K                     -- Move down/up 10 lines
-* <space>                 -- Toggle highlight of search results
+* &lt;space&gt;           -- Toggle highlight of search results
 * H/L                     -- Move to the start/end of a line
 * cmd<Tab>                -- Autocomplete
 * C-j/k/l/h               -- Move around in windows like a normal person.
