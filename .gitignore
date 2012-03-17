@@ -1,0 +1,3 @@
+*.swp
+.viminfo
+.vim/.netrwhist
