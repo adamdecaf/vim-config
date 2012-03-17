@@ -15,3 +15,4 @@
 * H/L                     -- Move to the start/end of a line
 * cmd<Tab>                -- Autocomplete
 * C-j/k/l/h               -- Move around in windows like a normal person.
+* C-o                     -- Open NERDTree file browsre
