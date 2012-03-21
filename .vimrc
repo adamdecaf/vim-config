@@ -30,6 +30,9 @@ cmap Tabe tabe
 cmap Tabnew tabnew
 cmap Tabdo tabdo
 
+" Map C-d to the bash logout
+noremap <C-d> :q<CR>
+
 " Use Python as a calculator
 :command! -nargs=+ Calc :py print <args>
 :py from math import *
