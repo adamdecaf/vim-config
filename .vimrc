@@ -19,7 +19,9 @@ set tabpagemax=50
 noremap <C-n> :set nu! nu?<CR>
 set hls " highlight search
 set ignorecase
+set incsearch
 set lbr " linebreak
+set shiftround " when at 3 spaces, and I hit > ... go to 4, not 5
 
 " Stupid shift key fixes
 cmap W w
@@ -31,6 +33,9 @@ cmap Tabe tabe
 cmap Tabnew tabnew
 cmap Tabdo tabdo
 
+" Select all.
+map <C-a> ggVG
+
 " Map C-d to the bash logout
 noremap <C-d> :q<CR>
 
@@ -39,10 +44,10 @@ noremap <C-d> :q<CR>
 :py from math import *
 
 " Easier moving in tabs and windows
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-L> <C-W>l<C-W>_
-map <C-H> <C-W>h<C-W>_
+map <C-J> <C-W>j<C-W>
+map <C-K> <C-W>k<C-W>
+map <C-L> <C-W>l<C-W>
+map <C-H> <C-W>h<C-W>
 
 " Turn Spelling Optionally On
 map S :setlocal spell! spelllang=en_us<CR>
