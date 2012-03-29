@@ -1,9 +1,10 @@
 # My vim config
 
 ## Installation
-  0. git clone git@github.com:adamdecaf/vim-config.git
-  1. ln src/vim-config/.vimrc .vimrc
-  2. ln -s path/to/vim-config/.vim/ .vim
+
+    git clone git@github.com:adamdecaf/vim-config.git
+    ln src/vim-config/.vimrc .vimrc
+    ln -s path/to/vim-config/.vim/ .vim
 
 ## Useful Shortcuts
 * C-n                     -- Toggle line numbers
