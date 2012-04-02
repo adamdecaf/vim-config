@@ -31,7 +31,6 @@ cmap wQ wq
 cmap Q q
 cmap Tabe tabe
 cmap Tabnew tabnew
-cmap Tabdo tabdo
 
 " Select all.
 map <C-a> ggVG
