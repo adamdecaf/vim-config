@@ -18,6 +18,7 @@
 * C-j/k/l/h               -- Move around in windows like a normal person.
 * C-o                     -- Open NERDTree file browsre
 * C-a                     -- Select all text
+* C-d                     -- Shortcut for :q
 
 # Twitter Shortcuts
 * :FriendsTwitter         -- View your friends recent posts
