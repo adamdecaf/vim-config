@@ -18,3 +18,13 @@
 * C-j/k/l/h               -- Move around in windows like a normal person.
 * C-o                     -- Open NERDTree file browsre
 * C-a                     -- Select all text
+
+# Twitter Shortcuts
+* :FriendsTwitter         -- View your friends recent posts
+* :PosttoTwitter          -- Post a new tweet
+* :SearchTwitter          -- Use Twitter Search. 
+* Alt-R                   -- Starts a @-reply. (from timeline buffer) 
+* Alt-D                   -- Starts a direct message.
+
+# Resources
+* http://www.vim.org/scripts/script.php?script_id=2204
