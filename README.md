@@ -17,3 +17,4 @@
 * cmd<Tab>                -- Autocomplete
 * C-j/k/l/h               -- Move around in windows like a normal person.
 * C-o                     -- Open NERDTree file browsre
+* C-a                     -- Select all text
