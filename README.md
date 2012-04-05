@@ -14,7 +14,7 @@
 * J/K                     -- Move down/up 10 lines
 * &lt;space&gt;           -- Toggle highlight of search results
 * H/L                     -- Move to the start/end of a line
-* cmd<Tab>                -- Autocomplete
+* cmd&lt;Tab&gt;          -- Autocomplete
 * C-j/k/l/h               -- Move around in windows like a normal person.
 * C-o                     -- Open NERDTree file browsre
 * C-a                     -- Select all text
