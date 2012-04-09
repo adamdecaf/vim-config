@@ -39,6 +39,10 @@ map <C-a> ggVG
 " Map C-d to the bash logout
 noremap <C-d> :q<CR>
 
+" Enable shorcuts to split windows
+map <C-u> :split<CR>
+map <C-i> :vsplit<CR>
+
 " Use Python as a calculator
 :command! -nargs=+ Calc :py print <args>
 :py from math import *

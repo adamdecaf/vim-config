@@ -1,3 +1,4 @@
 *.swp
 .viminfo
 .vim/.netrwhist
+.vim/sessions/
