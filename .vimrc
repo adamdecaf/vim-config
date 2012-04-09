@@ -33,9 +33,6 @@ cmap Tabe tabe
 cmap Tabnew tabnew
 cmap Tabdo tabdo
 
-" Select all.
-map <C-a> ggVG
-
 " Map C-d to the bash logout
 noremap <C-d> :q<CR>
 

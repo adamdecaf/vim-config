@@ -17,8 +17,9 @@
 * cmd&lt;Tab&gt;          -- Autocomplete
 * C-j/k/l/h               -- Move around in windows like a normal person.
 * C-o                     -- Open NERDTree file browsre
-* C-a                     -- Select all text
 * C-d                     -- Shortcut for :q
+* C-u                     -- Split the window into two horz
+* C-i                     -- Split the window into two vertically
 
 # Twitter Shortcuts
 * :FriendsTwitter         -- View your friends recent posts
