@@ -3,8 +3,8 @@
 ## Installation
 
     git clone git@github.com:adamdecaf/vim-config.git
-    ln src/vim-config/.vimrc .vimrc
-    ln -s path/to/vim-config/.vim/ .vim
+    ln -s /home/path/to/vim-config/.vimrc /home/<user>/.vimrc
+    ln -s /home/path/to/vim-config/.vim/ /home/<user>/.vim
 
 ## Useful Shortcuts
 * C-n                     -- Toggle line numbers

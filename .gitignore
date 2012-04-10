@@ -2,3 +2,4 @@
 .viminfo
 .vim/.netrwhist
 .vim/sessions/
+*pyc
