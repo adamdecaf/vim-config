@@ -37,6 +37,9 @@ cmap Tabdo tabdo
 " opening a file.
 map <C-m> <esc>:tabnew<CR>:e 
 
+" Remove whitespace at the end of a file on write
+autocmd BufWritePre * :%s/\s\+$//e
+
 " Map C-d to the bash logout
 noremap <C-d> :q<CR>
 
