@@ -25,9 +25,12 @@
 # Twitter Shortcuts
 * :FriendsTwitter         -- View your friends recent posts
 * :PosttoTwitter          -- Post a new tweet
-* :SearchTwitter          -- Use Twitter Search. 
-* Alt-R                   -- Starts a @-reply. (from timeline buffer) 
+* :SearchTwitter          -- Use Twitter Search.
+* Alt-R                   -- Starts a @-reply. (from timeline buffer)
 * Alt-D                   -- Starts a direct message.
+
+# Fun commands
+* :Matrix                 -- Show a matrix screensaver
 
 # Resources
 * Twitter Script: http://www.vim.org/scripts/script.php?script_id=2204
