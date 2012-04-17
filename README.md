@@ -7,7 +7,6 @@
     ln -s /home/path/to/vim-config/.vim/ /home/<user>/.vim
 
 ## Useful Shortcuts
-<pre>
 * C-n                     -- Toggle line numbers
 * C-m                     -- Open a new tab and search for a file.
 * WQ                      -- Fix all typos of "Wq", "WQ", etc..
@@ -22,7 +21,6 @@
 * C-d                     -- Shortcut for :q
 * C-u                     -- Split the window into two horz
 * C-i                     -- Split the window into two verticall
-</pre>
 
 # Twitter Shortcuts
 * :FriendsTwitter         -- View your friends recent posts
