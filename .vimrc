@@ -33,6 +33,10 @@ cmap Tabe tabe
 cmap Tabnew tabnew
 cmap Tabdo tabdo
 
+" Create a shotcut for opening a new tab and
+" opening a file.
+map <C-m> <esc>:tabnew<CR>:e 
+
 " Map C-d to the bash logout
 noremap <C-d> :q<CR>
 

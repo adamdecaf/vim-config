@@ -8,6 +8,7 @@
 
 ## Useful Shortcuts
 * C-n                     -- Toggle line numbers
+* C-m                     -- Open a new tab and search for a file.
 * WQ                      -- Fix all typos of "Wq", "WQ", etc..
 * :Calc <expression>      -- Perform math computations with python
 * S                       -- Toggle spelling (en-us)
