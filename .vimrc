@@ -6,7 +6,7 @@ set showmatch  "Show matching bracets when text indicator is over them
 
 colorscheme koehler
 
-" Switch on filetype detection and loads 
+" Switch on filetype detection and loads
 " indent file (indent.vim) for specific file types
 " filetype indent on
 filetype on
@@ -35,7 +35,7 @@ cmap Tabdo tabdo
 
 " Create a shotcut for opening a new tab and
 " opening a file.
-map <C-m> <esc>:tabnew<CR>:e 
+map <C-m> <esc>:tabnew<CR>:e
 
 " Remove whitespace at the end of a file on write
 autocmd BufWritePre * :%s/\s\+$//e
@@ -100,12 +100,12 @@ endfunction
 imap <Tab> <C-R>=SuperTab()<CR>
 
 " Show formatting for json
-augroup json_autocmd 
-  autocmd! 
-  autocmd FileType json set autoindent 
-  autocmd FileType json set formatoptions=tcq2l 
-  autocmd FileType json set textwidth=78 shiftwidth=2 
-  autocmd FileType json set softtabstop=2 tabstop=8 
-  autocmd FileType json set expandtab 
-  autocmd FileType json set foldmethod=syntax 
+augroup json_autocmd
+  autocmd!
+  autocmd FileType json set autoindent
+  autocmd FileType json set formatoptions=tcq2l
+  autocmd FileType json set textwidth=78 shiftwidth=2
+  autocmd FileType json set softtabstop=2 tabstop=8
+  autocmd FileType json set expandtab
+  autocmd FileType json set foldmethod=syntax
 augroup END
