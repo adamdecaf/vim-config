@@ -20,7 +20,7 @@
 * C-o                     -- Open NERDTree file browsre
 * C-d                     -- Shortcut for :q
 * C-u                     -- Split the window into two horz
-* C-i                     -- Split the window into two vertically
+* C-i                     -- Split the window into two verticall
 
 # Twitter Shortcuts
 * :FriendsTwitter         -- View your friends recent posts
@@ -30,4 +30,4 @@
 * Alt-D                   -- Starts a direct message.
 
 # Resources
-* http://www.vim.org/scripts/script.php?script_id=2204
+* Twitter Script: http://www.vim.org/scripts/script.php?script_id=2204
