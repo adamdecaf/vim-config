@@ -34,3 +34,7 @@
 
 # Resources
 * Twitter Script: http://www.vim.org/scripts/script.php?script_id=2204
+
+# More scripts
+I choose not to include many of these scripts because i will not use them.
+* IRC Client: http://www.vim.org/scripts/script.php?script_id=931
