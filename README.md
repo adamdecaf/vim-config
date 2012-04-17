@@ -38,3 +38,9 @@
 # More scripts
 I choose not to include many of these scripts because i will not use them.
 * IRC Client: http://www.vim.org/scripts/script.php?script_id=931
+* CSV File viewer: http://www.vim.org/scripts/script.php?script_id=2830
+* Markdown Syntax: http://www.vim.org/scripts/script.php?script_id=2882
+* OCaml Syntax: http://www.vim.org/scripts/script.php?script_id=1196
+* Block Comment: http://www.vim.org/scripts/script.php?script_id=473
+* Haskell Syntax: http://www.vim.org/scripts/script.php?script_id=3034
+
