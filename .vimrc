@@ -43,6 +43,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Map C-d to the bash logout
 noremap <C-d> :q<CR>
 
+" View the current tabs in a session
+noremap <C-t> :tabs<CR>
+
 " Enable shorcuts to split windows
 map <C-u> :split<CR>
 map <C-i> :vsplit<CR>

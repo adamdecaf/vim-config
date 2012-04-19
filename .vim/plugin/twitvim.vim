@@ -427,7 +427,7 @@ function! s:conv_month(s)
     for mon in range(len(monthnames))
 	if monthnames[mon] == tolower(a:s)
 	    return mon + 1
-	endif	
+	endif
     endfor
     return 0
 endfunction
@@ -461,7 +461,7 @@ function! s:parse_time(str)
     if matchres != []
 	return s:timegm2(matchres, [6, -1, 2, 3, 4, 5])
     endif
-	
+
     " This timestamp format is used by Twitter Search.
     let matchres = matchlist(a:str, '^\(\d\+\)-\(\d\+\)-\(\d\+\)T\(\d\+\):\(\d\+\):\(\d\+\)Z$')
     if matchres != []
@@ -536,7 +536,7 @@ function! s:list_tokens()
     endfor
     return names
 endfunction
-    
+
 " Returns a newline-delimited list of screen names. This is for command
 " completion when switching logins.
 function! s:name_list_tokens(ArgLead, CmdLine, CursorPos)
@@ -959,7 +959,7 @@ function! s:do_oauth()
     endif
 
     " Call oauth/access_token to swap request token for access token.
-    
+
     let parms = { "dummy" : 1, "oauth_token" : request_token, "oauth_verifier" : pin }
     let access_url = s:to_https(s:gc_access_url)
     let oauth_hdr = s:getOauthResponse(access_url, "POST", parms, token_secret)
@@ -1125,7 +1125,7 @@ function! s:curl_curl(url, login, proxy, proxylogin, parms)
     if got_json
 	let curlcmd .= '-H "Content-Type: application/json" '
     endif
-    
+
     let curlcmd .= '-H "User-Agent: '.s:user_agent.'" '
 
     let curlcmd .= '"'.a:url.'"'
@@ -1284,7 +1284,7 @@ $ua->default_header('User-Agent' => VIM::Eval("s:user_agent"));
 my $response;
 
 if (defined $parms{'__json'}) {
-    $response = $ua->post($url, 
+    $response = $ua->post($url,
 	'Content-Type' => 'application/json',
 	Content => $parms{'__json'});
 }
@@ -1350,7 +1350,7 @@ def make_base64(s)
 end
 
 def parse_user_password(s)
-    (s =~ /:/ ? s : Base64.decode64(s)).split(':', 2)    
+    (s =~ /:/ ? s : Base64.decode64(s)).split(':', 2)
 end
 
 url = URI.parse(VIM.evaluate('a:url'))
@@ -1392,7 +1392,7 @@ keys.each { |k|
 }
 
 begin
-    res = net.start { |http| 
+    res = net.start { |http|
 	path = "#{url.path}?#{url.query}"
 	if parms == {}
 	    req = Net::HTTP::Get.new(path)
@@ -1511,7 +1511,7 @@ lappend headers "User-Agent" [::vim::expr "s:user_agent"]
 set parms [list]
 set keys [split [::vim::expr "keys(a:parms)"] "\n"]
 if { [llength $keys] > 0 } {
-    if { [lsearch -exact $keys "__json"] != -1 } {	
+    if { [lsearch -exact $keys "__json"] != -1 } {
 	set query [::vim::expr "a:parms\['__json']"]
 	lappend headers "Content-Type" "application/json"
     } else {
@@ -1617,7 +1617,7 @@ endif
 
 " Each buffer record holds the following fields:
 "
-" buftype: Buffer type = dmrecv, dmsent, search, public, friends, user, 
+" buftype: Buffer type = dmrecv, dmsent, search, public, friends, user,
 "   replies, list, retweeted_by_me, retweeted_to_me, favorites, trends
 " user: For user buffers if other than current user
 " list: List slug if displaying a Twitter list.
@@ -1633,7 +1633,7 @@ let s:curbuffer = {}
 
 " The info buffer record holds the following fields:
 "
-" buftype: profile, friends, followers, listmembers, listsubs, userlists, 
+" buftype: profile, friends, followers, listmembers, listsubs, userlists,
 "   userlistmem, userlistsubs, listinfo
 " next_cursor: Used for paging.
 " prev_cursor: Used for paging.
@@ -1643,7 +1643,7 @@ let s:curbuffer = {}
 " buffer: The buffer text.
 " view: viewport saved with winsaveview()
 " showheader: 1 if header is shown in this buffer, 0 if header is hidden.
-" 
+"
 " flist: List of friends/followers IDs.
 " findex: Starting index within flist of the friends/followers info displayed
 " in this buffer.
@@ -1719,7 +1719,7 @@ function! s:save_buffer(infobuf)
 	let cur.buffer = getline(1, '$')
 	let cur.view = winsaveview()
 	execute curwin .  "wincmd w"
-	
+
 	" If current buffer is the same type as buffer at the top of the stack,
 	" then just copy it.
 	if stack.ptr >= 0 && s:is_same(a:infobuf, cur, stack.stack[stack.ptr])
@@ -2258,7 +2258,7 @@ if !hasmapto('<Plug>TwitvimVisual')
 
     " Allow Ctrl-T as an alternative to Alt-T.
     " Alt-T pulls down the Tools menu if the menu bar is enabled.
-    vmap <unique> <C-t> <Plug>TwitvimVisual
+    "vmap <unique> <C-t> <Plug>TwitvimVisual
 endif
 
 vmenu Plugin.TwitVim.Post\ selection <Plug>TwitvimVisual
@@ -2266,7 +2266,7 @@ vmenu Plugin.TwitVim.Post\ selection <Plug>TwitvimVisual
 " Launch web browser with the given URL.
 function! s:launch_browser(url)
     if !exists('g:twitvim_browser_cmd') || g:twitvim_browser_cmd == ''
-	" Beep and error-highlight 
+	" Beep and error-highlight
 	execute "normal! \<Esc>"
 	call s:errormsg('Browser cmd not set. Please add to .vimrc: let twitvim_browser_cmd="browsercmd"')
 	return -1
@@ -2505,12 +2505,12 @@ function! s:do_user_info_infobuf()
 endfunction
 
 " Get info on the given user. If no user is provided, use the current word and
-" strip off the @ or : if the current word is @user or user:. 
+" strip off the @ or : if the current word is @user or user:.
 function! s:do_user_info(s)
     let s = a:s
     if s == ''
 	let s = expand("<cword>")
-	
+
 	" Handle @-replies.
 	let matchres = matchlist(s, '^@\(\w\+\)')
 	if matchres != []
@@ -2629,7 +2629,7 @@ function! s:twitter_win(wintype)
 	execute "new " . winname
 	setlocal noswapfile
 	setlocal buftype=nofile
-	setlocal bufhidden=delete 
+	setlocal bufhidden=delete
 	setlocal foldcolumn=0
 	setlocal nobuflisted
 	setlocal nospell
@@ -2654,14 +2654,14 @@ function! s:twitter_win(wintype)
 
 	    " Previous page in info buffer.
 	    nnoremap <buffer> <silent> <C-PageUp> :call <SID>PrevPageInfo()<cr>
-	    
+
 	    " Refresh info buffer.
 	    nnoremap <buffer> <silent> <Leader><Leader> :call <SID>RefreshInfo()<cr>
 
 	    " We need this to be handled specially in the info buffer.
 	    nnoremap <buffer> <silent> <A-g> :call <SID>launch_url_cword(1)<cr>
 	    nnoremap <buffer> <silent> <Leader>g :call <SID>launch_url_cword(1)<cr>
-	    
+
 	    " This also needs to be handled specially for Name: lines.
 	    nnoremap <buffer> <silent> <Leader>p :call <SID>do_user_info_infobuf()<cr>
 
@@ -3116,7 +3116,7 @@ function! s:Direct_Messages(mode, page)
     if a:page > 1
 	let url = s:add_to_url(url, 'page='.a:page)
     endif
-    
+
     " Include entities to get URL expansions for t.co.
     let url = s:add_to_url(url, 'include_entities=true')
 
@@ -3181,7 +3181,7 @@ function! s:get_woeids()
 
 	if placetype == 'Supername'
 	    let s:woeid_list[name] = { 'woeid' : woeid, 'towns' : {} }
-	elseif placetype == 'Country' 
+	elseif placetype == 'Country'
 	    if !has_key(s:woeid_list, country)
 		let s:woeid_list[country] = { 'towns' : {} }
 	    endif
@@ -3460,7 +3460,7 @@ function! s:PrevPageTimeline()
     endif
 endfunction
 
-" Get a Twitter list. Need to do a little fiddling because the 
+" Get a Twitter list. Need to do a little fiddling because the
 " username argument is optional.
 function! s:DoList(page, arg1, ...)
     let user = ''
@@ -4323,7 +4323,7 @@ function! s:get_list_members(cursor, user, list, subscribers)
     echo "Retrieved ".item."."
 endfunction
 
-" Get Twitter list members. Need to do a little fiddling because the 
+" Get Twitter list members. Need to do a little fiddling because the
 " username argument is optional.
 function! s:DoListMembers(subscribers, arg1, ...)
     let user = ''
@@ -4430,7 +4430,7 @@ function! s:load_prevnext_friends_info_2(buftype, infobuffer, previous)
 
 	    " This tells s:get_friends_2() that we are paging backwards so
 	    " it'll display the last 100 items in the new ID list.
-	    let index = -1 
+	    let index = -1
 	else
 	    let cursor = a:infobuffer.cursor
 	    let ids = a:infobuffer.flist
