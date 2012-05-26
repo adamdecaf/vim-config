@@ -11,7 +11,7 @@ colorscheme koehler
 " filetype indent on
 filetype on
 set history=1000
-set tabpagemax=50
+set tabpagemax=100
 
 """"""""""""""""""""""""""""""""""
 " Some other confy settings
