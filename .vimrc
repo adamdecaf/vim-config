@@ -33,6 +33,10 @@ cmap Tabe tabe
 cmap Tabnew tabnew
 cmap Tabdo tabdo
 
+" Setup the hotkeys for testing and compiling scala with sbt
+map C :sbtc<CR>
+map T :sbtt<CR>
+
 " Create a shotcut for opening a new tab and
 " opening a file.
 map <C-m> <esc>:tabnew<CR>:e
